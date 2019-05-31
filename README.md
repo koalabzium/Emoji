@@ -36,9 +36,9 @@ You can create a string like this:
 You can assing integers, doubles and strings to variables. Names must consist of letters (uppercase or lowercase).
 Examples:
 ```
-dog ＼(＾▽＾)／ 7                         dog = 7
-cat ＼(＾▽＾)／ dog ✰ 8                   cat = dog * 8
-FRIENDSHIP ＼(＾▽＾)／ ☆º°˚*☆ Magic ☆º°˚*☆      LOVE = "Magic"
+dog ＼(＾▽＾)／ 7                               dog = 7
+cat ＼(＾▽＾)／ dog ✰ 8                         cat = dog * 8
+FRIENDSHIP ＼(＾▽＾)／ ☆º°˚*☆ Magic ☆º°˚*☆      FRIENDSHIP = "Magic"
 ```
 
 
