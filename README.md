@@ -38,13 +38,13 @@ Examples:
 ```
 dog ＼(＾▽＾)／ 7                         dog = 7
 cat ＼(＾▽＾)／ dog ✰ 8                   cat = dog * 8
-LOVE ＼(＾▽＾)／ ☆º°˚*☆ Magic ☆º°˚*☆      LOVE = "Magic"
+FRIENDSHIP ＼(＾▽＾)／ ☆º°˚*☆ Magic ☆º°˚*☆      LOVE = "Magic"
 ```
 
 
 ### Comments
 
-You comment whole line like this:
+You comment a whole line like this:
 ```
 (☯‿├┬┴┬┴ I'm hidden <3
 ```
@@ -56,15 +56,16 @@ Look at the eyes!
 ʕₒᴥₒʔ       <
 ʕ'ᴥ'ʔ       >
 ```
-You can compare variables to variables, variables to numbers and variables to arithmetic expressions. For example
+You can compare variables, numbers and arithmetic expressions. For example
 
 ```
-cat ʕ•ᴥ•ʔ 32 ❤ dog        cat > 32 - dog 
+cat ʕₒᴥₒʔ 32 ❤ dog        cat < 32 - dog 
+15 ʕ'ᴥ'ʔ 7 ๑ 2            15 > 7 / 2
 ```
 
 
 ### Printing
-Of course we can print stuff too! You can print variables, arithmetic expressions, logical expressions and strings!
+Of course we can print stuff too! You can print variables, arithmetic expressions and strings!
 Example:
 ```
 ( . .)φ 2.5 ✰ 7.1
@@ -73,26 +74,26 @@ Example:
 ```
 
 ### If statements
-If statements consist of five things: "if" keyword, condition, "then" keyword, body, "end if" keyword. In our language these are:
+If statements consist of: "if" keyword, condition, "then" keyword, body, "end if" keyword. In our language these are:
 
 ```
-(•ิ_•ิ)? cat ʕ•ᴥ•ʔ dog                                          if cat == dog
-ᕕ( ᐛ )ᕗ                                                       then
+(•ิ_•ิ)? cat ʕ•ᴥ•ʔ dog                                          IF cat == dog
+ᕕ( ᐛ )ᕗ                                                      THEN
 
-    ( . .)φ  ☆º°˚*☆ Cats and dogs are equal. ☆º°˚*☆            print "Cats and dogs are equal."
+    ( . .)φ  ☆º°˚*☆ Cats and dogs are equal. ☆º°˚*☆             print "Cats and dogs are equal."
 
-¯\_(ツ)_/¯                                                     end if
+¯\_(ツ)_/¯                                                    END IF
 ```
 Very intuitive!
 
 ### While loop
 As in most of languages in while loop you have: "while" keyword, condition, "do" keyword, body and "end while" keyword.
 ```
-<(_ _<(_ _<(_  dog ʕ'ᴥ'ʔ 4  _)>_ _)>_ _)>         while dog > 4 do
+<(_ _<(_ _<(_  dog ʕ'ᴥ'ʔ 4  _)>_ _)>_ _)>         WHILE dog > 4 DO
 
     dog ＼(＾▽＾)／ dog ❤ 1                             dog = dog - 1
 
-ʢᵕᴗᵕʡ                                             end while
+ʢᵕᴗᵕʡ                                             END WHILE
 ```
 
 
