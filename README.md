@@ -18,4 +18,13 @@ In demo folder there are few demos to get you started with this amazing language
 ❤     SUB
 ✰     MULT
 ๑     DIV
+{     (
+}     )
+```
+
+For example: 
+12 - (3 + 4) / 7 * 3
+would be:
+```
+12 ❤ {3 ✿ 4} ๑ 7 ✰ 3
 ```
