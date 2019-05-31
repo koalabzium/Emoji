@@ -26,7 +26,7 @@ would be:
 ```
 ### Strings
 
-You can create string like this:
+You can create a string like this:
 ```
 ☆º°˚*☆ Have a magical day ☆º°˚*☆
 ```
