@@ -367,7 +367,7 @@ def codegen(ast):
 
 
 def main():
-    with open('demo.txt') as f:
+    with open('demos/demo1.txt') as f:
         read_data = f.read()
 
     codegen(parser(lexer(read_data)))
