@@ -25,7 +25,7 @@ TOK_LESS = 20
 TOK_MORE = 21
 TOK_THEN = 22
 
-# AST nodes
+# AST nodetypes
 AST_DECL = 0
 AST_ASSIGN = 1
 AST_PRINT = 2
@@ -62,7 +62,7 @@ def lexer(code):
         if el.isspace():
             pass
 
-        elif el == "(":  # komentarz lub print
+        elif el == "(":
             i += 1
             if code[i] == "☯":
                 while i < len_of_code and code[i] != "\n":
@@ -160,13 +160,11 @@ def lexer(code):
         else:
             error("It seems that I don't understand that char: " + el)
         i += 1
-        # ew VAR, TYPE, READ?
 
     return tokens
 
 
 def parser(toks):
-    # change iterator to the next token and delete it
     def consume_next_tok(tok_type):
         if tok_type == toks[0]["toktype"]:
             t = toks.pop(0)
@@ -203,14 +201,10 @@ def parser(toks):
             consume_next_tok(TOK_PRINT)
             e = expr()
             return astnode(AST_PRINT, expr=e)
-        # elif next_tok == TOK_READ:
-        #     consume_next_tok(TOK_READ)
-        #     id = consume_next_tok(TOK_ID)
-        #     return astnode(AST_READ, id=id)
+
         elif next_tok == TOK_WHILE:
             consume_next_tok(TOK_WHILE)
             e = condition()
-              # a
             consume_next_tok(TOK_DO)
             body = get_statements()
             consume_next_tok(TOK_END)
@@ -281,24 +275,7 @@ def parser(toks):
             next_tok = peek_next_tok()
         return f
 
-    # def logic():
-    #     f = factor()
-    #     next_tok = peek_next_tok()
-    #     while next_tok in (TOK_LESS, TOK_MORE, TOK_EQ):
-    #         if next_tok == TOK_LESS:
-    #             consume_next_tok(TOK_LESS)
-    #             f2 = factor()
-    #             f = astnode(AST_BINOP, op="<", left=f, right=f2)
-    #         elif next_tok == TOK_MORE:
-    #             consume_next_tok(TOK_LESS)
-    #             f2 = factor()
-    #             f = astnode(AST_BINOP, op=">", left=f, right=f2)
-    #         elif next_tok == TOK_EQ:
-    #             consume_next_tok(TOK_LESS)
-    #             f2 = factor()
-    #             f = astnode(AST_BINOP, op="==", left=f, right=f2)
-    #
-    #     return f
+
 
     def factor():
         next_tok = peek_next_tok()
@@ -332,7 +309,6 @@ def codegen(ast):
     variables = []
 
     def new_temp():
-        """Return a new, unique temporary variable name."""
         global curr_tmp
         curr_tmp += 1
         return "tmp" + str(curr_tmp)
@@ -348,13 +324,7 @@ def codegen(ast):
         elif stmt["nodetype"] == AST_PRINT:
             expr_loc = gen_expr(stmt["expr"])
             print('console.log(' + expr_loc + ')')
-        # elif stmt["nodetype"] == AST_READ:
-        #     id = stmt["id"]["value"]
-        #     if symtab[id] == "int":
-        #         flag = "d"
-        #     else:
-        #         flag = "f"
-        #     print('scanf("%%%s", &%s);' % (flag, id))
+
         elif stmt["nodetype"] == AST_WHILE:
             expr_loc = gen_expr(stmt["expr"])
             print("while (%s) { " % expr_loc)
