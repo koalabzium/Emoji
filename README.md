@@ -28,3 +28,10 @@ would be:
 ```
 12 ❤ {3 ✿ 4} ๑ 7 ✰ 3
 ```
+### Strings
+
+You create string like this:
+```
+☆º°˚*☆ Have a magical day ☆º°˚*☆
+```
+
