@@ -35,3 +35,39 @@ You create string like this:
 ☆º°˚*☆ Have a magical day ☆º°˚*☆
 ```
 
+### Asignment
+
+You can assing integers, doubles and strings to variables. Names must consist of letters (uppercase or lowercase).
+Examples:
+```
+dog ＼(＾▽＾)／ 7                         dog = 7
+cat ＼(＾▽＾)／ dog ✰ 8                   cat = dog * 8
+LOVE ＼(＾▽＾)／ ☆º°˚*☆ Magic ☆º°˚*☆      LOVE = "Magic"
+```
+
+
+### Comments
+
+You comment whole line like this:
+```
+(☯‿├┬┴┬┴ I'm hidden <3
+```
+
+### Logical operators
+Look at the eyes!
+```
+ʕ•ᴥ•ʔ       ==
+ʕₒᴥₒʔ       <
+ʕ'ᴥ'ʔ       >
+```
+You can compare variables to variables, variables to numbers and variables to arithmetic expressions. For example
+cat > 32 - dog 
+```
+cat ʕ•ᴥ•ʔ 32 ❤ dog
+```
+
+
+
+### Printing
+Of course we can print stuff too! You can print variables, arithmetic expressions, logical expressions and strings!
+Example:
