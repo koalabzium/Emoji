@@ -1,5 +1,5 @@
 # Emoji
-Simple, cute and useless language compiler &lt;3
+Simple, cute and useless language transpiler &lt;3
 
 ## Usage
 
