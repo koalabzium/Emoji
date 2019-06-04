@@ -3,7 +3,10 @@ Simple, cute and useless language transpiler &lt;3
 
 ## Usage
 
-For now, you need to change the file name in main, run it and it will generate for you nice, ugly and working JavaScript code :)
+* You need to have python :D. 
+* Then you need to download emoji_transpiler.py
+* Then change the filepath name in main function to the path of the file you want to transpile
+* Run emoji_trapiler.py and it will generate for you ugly but working JavaScript code :)
 
 ## Docs?
 
