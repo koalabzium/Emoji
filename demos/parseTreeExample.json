@@ -1,0 +1,83 @@
+{
+  'stmts': [
+    {
+      'nodetype': 1,
+      'left': 'a',
+      'right': {
+        'nodetype': 3,
+        'value': 6
+      }
+    },
+    {
+      'nodetype': 1,
+      'left': 'b',
+      'right': {
+        'nodetype': 5,
+        'name': 'a'
+      }
+    },
+    {
+      'nodetype': 7,
+      'expr': {
+        'nodetype': 9,
+        'op': '>',
+        'left': {
+          'nodetype': 5,
+          'name': 'b'
+        },
+        'right': {
+          'nodetype': 3,
+          'value': 1
+        }
+      },
+      'body': [
+        {
+          'nodetype': 1,
+          'left': 'b',
+          'right': {
+            'nodetype': 6,
+            'op': '-',
+            'left': {
+              'nodetype': 5,
+              'name': 'b'
+            },
+            'right': {
+              'nodetype': 3,
+              'value': 1
+            }
+          }
+        },
+        {
+          'nodetype': 1,
+          'left': 'a',
+          'right': {
+            'nodetype': 6,
+            'op': '*',
+            'left': {
+              'nodetype': 5,
+              'name': 'b'
+            },
+            'right': {
+              'nodetype': 5,
+              'name': 'a'
+            }
+          }
+        }
+      ]
+    },
+    {
+      'nodetype': 2,
+      'expr': {
+        'nodetype': 8,
+        'value': ' 6! is '
+      }
+    },
+    {
+      'nodetype': 2,
+      'expr': {
+        'nodetype': 5,
+        'name': 'a'
+      }
+    }
+  ]
+}
